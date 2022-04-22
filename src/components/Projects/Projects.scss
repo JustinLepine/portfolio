@@ -10,15 +10,37 @@
         list-style: none;
     }
 
-    &__left {
-        margin: 1rem 0 1rem 10%;
+    &__list {
+        display: flex;
+
     }
 
-    &__right {
-        margin: 1rem 10% 1rem 0;
+    &__left {
+        margin: 1rem 0 1rem 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     &__id {
-        font-weight: 0.8rem;
+        margin-left: -2rem;
+        font-size: 1.5rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    &__tech {
+        margin-bottom: 0;
+    }
+
+    &__desc {
+        font-size: 1.2rem;
+    }
+
+    &__right {
+        margin: 1rem 20% 1rem 0;
     }
 }

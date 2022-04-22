@@ -15,7 +15,7 @@ function Projects() {
                             <h2 className='projects__tech'>{project.tech}</h2>
                             <p className='projects__desc'>{project.desc}</p>
                         </div>
-                        <div className='projects__right'>                            
+                        <div className='projects__right'>
                         </div>
                     </li>
                 )
