@@ -3,7 +3,7 @@ const ProjectLists = [
         id: '01',
         title: 'Ask V',
         tech: 'HTML, Sass, JS',
-        desc: 'Ask V is on of my first projects I did one month into the BrainStation bootcamp.'
+        desc: 'From the first Bootcamp Hackathon Ask V is a Valentines Day bot that would answer simple questions using OpenAI API'
     },
     {
         id: '02',

@@ -1,6 +1,7 @@
 .projects {
     display: flex;
-    background-color: #DDD;
+    justify-content: center;
+    background-color: #DDD; 
 
     ul {
         padding: 0;
@@ -12,11 +13,12 @@
 
     &__list {
         display: flex;
-
+        justify-content: space-between;
+        margin: 3rem 0;
     }
 
     &__left {
-        margin: 1rem 0 1rem 20%;
+        margin: 1rem 1rem 1rem 15%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -41,6 +43,16 @@
     }
 
     &__right {
-        margin: 1rem 20% 1rem 0;
+        margin: 1rem 15% 1rem 1rem;
+    }
+
+    &__phone {
+        position: absolute;
+        width: 10rem;
+    }
+
+    &__desktop {
+        margin-top: 2rem;
+        width: 35rem;
     }
 }
