@@ -1,0 +1,17 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+    // flex-direction: column;
+
+    &__title {
+        font-size: 5rem;
+        width: 50%;
+    }
+
+    &__content {
+        font-size: 2rem;
+        width: 50%;
+    }
+}

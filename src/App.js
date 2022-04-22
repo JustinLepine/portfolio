@@ -1,5 +1,6 @@
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
+import Intro from "./components/Intro/Intro";
 import "./App.scss";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <div className="app">
       <Nav />
       <Hero />
+      <Intro />
     </div>
   );
 }
