@@ -25,10 +25,16 @@
     
     &__links {
         margin-left: 1rem;
-    }
+        
+        a {
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            color: black;
+            text-decoration: none;
+        }
 
-    &__links a {
-        color: black;
-        text-decoration: none;
+        :hover {
+            background-color: rgba($color: #3a3a3a, $alpha: 0.1);
+        }
     }
 }
