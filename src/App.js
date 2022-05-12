@@ -1,7 +1,4 @@
-import Nav from "./components/Nav/Nav";
-import Hero from "./components/Hero/Hero";
-import Intro from "./components/Intro/Intro";
-import Projects from "./components/Projects/Projects";
+import { Nav, Hero, Intro, Projects } from './components/index'
 import "./App.scss";
 
 function App() {
