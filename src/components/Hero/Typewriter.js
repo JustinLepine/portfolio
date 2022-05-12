@@ -7,6 +7,7 @@ export default class Typewriter {
             this.loop = loop
             this.typingSpeed = typingSpeed
             this.deletingSpeed = deletingSpeed
+            console.log("this is my queue, ",this.element)
     }
 
     typeString(string) {
@@ -39,19 +40,6 @@ export default class Typewriter {
         return this
     }
 
-    deleteAll(deleteSpeed = this.deletingSpeed) {
-        this.addToQueue(resolve => {
-            const interval = setInterval(() => {
-                this.element.innerText = this.element.innerText.substring(0, this.element.innerText.length - 1)
-                if (this.element.innerText.length === 0) {
-                    clearInterval(interval)
-                    resolve()
-                }
-            }, this.deletingSpeed)
-        })
-        return this
-    }
-
     pauseFor(duration) {
         this.addToQueue(resolve => {
             setTimeout(resolve, duration)
@@ -68,7 +56,7 @@ export default class Typewriter {
         }
         return this
     }
-
+    
     addToQueue(callback) {
         this.queue.push(() => new Promise(callback))
     }

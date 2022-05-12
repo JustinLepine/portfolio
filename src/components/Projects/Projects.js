@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectLists from './ProjectLists';
-import Phone from '../../assets/images/askv-phone.png'
-import Desktop from '../../assets/images/askv-desktop.png'
+import Images from '../../assets/images/index';
 import './Projects.scss';
 
 function Projects() {
@@ -18,8 +17,8 @@ function Projects() {
                             <p className='projects__desc'>{project.desc}</p>
                         </div>
                         <div className='projects__right'>
-                            <img className='projects__phone' src={Phone} alt='pic'/>
-                            <img className='projects__desktop' src={Desktop} alt='pic'/>
+                            <img className='projects__phone' src={Images.Phone} alt='pic'/>
+                            <img className='projects__desktop' src={Images.Desktop} alt='pic'/>
                         </div>
                     </li>
                 )
