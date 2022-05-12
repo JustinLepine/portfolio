@@ -1,4 +1,4 @@
-import { Nav, Hero, Intro, Projects } from './components/index'
+import { Nav, Hero, Intro, Projects } from './components'
 import "./App.scss";
 
 function App() {

@@ -1,4 +1,7 @@
+@use './styles/typography' as *;
+
 .app {
+	font-family: $font-libre;
   
   	&__scroll-down {
 	  Nav {
