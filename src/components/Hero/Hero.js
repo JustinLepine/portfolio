@@ -22,7 +22,7 @@ console.log('.')
     .start();
 
   return (
-    <section className="hero">
+    <section id='hero' className="hero">
       <div id="type" className="type">{}</div>
       <h2 className="hero__subtitle">Full Stack Web Developer</h2>
     </section>

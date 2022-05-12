@@ -26,4 +26,9 @@
     &__links {
         margin-left: 1rem;
     }
+
+    &__links a {
+        color: black;
+        text-decoration: none;
+    }
 }
