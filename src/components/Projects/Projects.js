@@ -17,8 +17,8 @@ function Projects() {
                             <p className='projects__desc'>{project.desc}</p>
                         </div>
                         <div className='projects__right'>
-                            <img className='projects__phone' src={Images.Phone} alt='pic'/>
-                            <img className='projects__desktop' src={Images.Desktop} alt='pic'/>
+                            <img className='projects__phone' src={Images.phone} alt='pic'/>
+                            <img className='projects__desktop' src={Images.desktop} alt='pic'/>
                         </div>
                     </li>
                 )

@@ -1,9 +1,11 @@
-import Phone from './askv-phone.png'
-import Desktop from './askv-desktop.png'
+import phone from './askv-phone.png'
+import desktop from './askv-desktop.png'
+import curly from './curly.svg'
 
 const Images = {
-    Phone,
-    Desktop
+    phone,
+    desktop,
+    curly
 };
 
 export default Images;

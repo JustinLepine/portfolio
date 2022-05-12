@@ -7,7 +7,7 @@ export default class Typewriter {
             this.loop = loop
             this.typingSpeed = typingSpeed
             this.deletingSpeed = deletingSpeed
-            console.log("this is my queue, ",this.element)
+            console.log("this is my queue, ",this.queue)
     }
 
     typeString(string) {

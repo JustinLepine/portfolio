@@ -6,7 +6,7 @@ function Hero() {
 // console.log(document)
   // const typewriter = new Typewriter(document.body, { loop: false })
   const typewriter = new Typewriter(document.body, { loop: false })
-
+console.log('.')
   typewriter
     .pauseFor(1000)
     .typeString("Hey!")
