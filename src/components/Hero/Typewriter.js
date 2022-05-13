@@ -2,12 +2,11 @@ export default class Typewriter {
     queue = []
 
     constructor(parent, { loop = false, typingSpeed = 80, deletingSpeed = 100 } = {}) {
-            this.element = document.createElement("p")
+            this.element = document.createElement("h1")
             parent.append(this.element)
             this.loop = loop
             this.typingSpeed = typingSpeed
             this.deletingSpeed = deletingSpeed
-            console.log("this is my queue, ",this.queue)
     }
 
     typeString(string) {

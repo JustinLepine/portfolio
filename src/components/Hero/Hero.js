@@ -1,29 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.scss";
 import Typewriter from "./Typewriter";
 
 function Hero() {
-// console.log(document)
-  // const typewriter = new Typewriter(document.body, { loop: false })
-  const typewriter = new Typewriter(document.body, { loop: false })
-console.log('.')
+
+  useEffect(() => {
+  const typewriter = new Typewriter(document.body.querySelector('.type'))
+
   typewriter
-    .pauseFor(1000)
+    .pauseFor(1500)
     .typeString("Hey!")
-    .pauseFor(1000)
+    .pauseFor(800)
     .deleteChars(4)
     .typeString("Hello!")
     .pauseFor(1000)
-    .typeString('\n\nIm Justin a Web Developer from Montreal, Canada!')
+    .typeString(' I\'m Justin Lepine a Web Developer from Montreal, Canada!')
     .pauseFor(500)
     .deleteChars(1)
     .pauseFor(500)
     .typeString('.')
+    .pauseFor(2000)
+    .typeString(' : )')
     .start();
+    console.log('typewriter')
+},[])
 
   return (
     <section id='hero' className="hero">
-      <div id="type" className="type">{}</div>
+      <div id="type" className="type"></div>
       <h2 className="hero__subtitle">Full Stack Web Developer</h2>
     </section>
   );
