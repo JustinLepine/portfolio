@@ -18,7 +18,7 @@ function Hero() {
     .pauseFor(500)
     .deleteChars(1)
     .pauseFor(500)
-    .typeString('.')
+    .typeString('🍁')
     .pauseFor(2000)
     .typeString(' : )')
     .start();
