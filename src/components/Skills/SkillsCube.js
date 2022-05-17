@@ -4,7 +4,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/hero.gltf')
+  const { nodes, materials } = useGLTF('/skills.gltf')
   return (
     <group rotation={[0.6,0.7,0]} ref={group} {...props} dispose={null}>
       <mesh geometry={nodes['main-cube'].geometry} material={materials['Material.015']} />
