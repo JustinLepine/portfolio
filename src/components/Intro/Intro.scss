@@ -6,6 +6,10 @@
     padding: 2% 0;
     border-bottom: 1px solid black;
 
+    &__box {
+        display: flex;
+    }
+
     &__title {
         font-size: 4rem;
         width: 50%;
