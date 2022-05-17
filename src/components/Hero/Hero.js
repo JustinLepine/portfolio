@@ -1,9 +1,6 @@
-import React, { useEffect, Suspense } from "react";
+import React, { useEffect } from "react";
 import "./Hero.scss";
 import Typewriter from "./Typewriter";
-import Sphere from "./AnimatedSphere";
-import { OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 
 function Hero() {
   useEffect(() => {
@@ -26,19 +23,12 @@ function Hero() {
       .pauseFor(2000)
       .typeString(" : )")
       .start();
-    console.log("typewriter");
   }, []);
+
+  
 
   return (
     <section id="hero" className="hero">
-      <Canvas className="hero__canvas">
-        <OrbitControls enableZoom={false} enableRotate={false} />
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Suspense fallback={null}>
-          <Sphere />
-        </Suspense>
-      </Canvas>
       <div id="type" className="hero__type"></div>
     </section>
   );
