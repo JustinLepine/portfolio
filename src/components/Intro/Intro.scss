@@ -3,11 +3,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 10%;
-    background-color: rgb(255, 255, 255, 0.1);
+    padding: 2% 0;
+    border-bottom: 1px solid black;
 
     &__title {
-        font-size: 5rem;
+        font-size: 4rem;
         width: 50%;
+        padding-left: 2%;
     }
 
     &__content {

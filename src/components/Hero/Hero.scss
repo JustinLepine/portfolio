@@ -1,16 +1,13 @@
 .hero {
     display: flex;
-    height: 100vh;
+    height: 96vh;
+    margin: 0 10%;
     background-size: cover;
     background-position: 0% 70%;
+    border-bottom: 1px solid black;
     
-    &__canvas {
-        z-index: 1;
-        margin-left: -15rem; 
-    }
-
     &__type {
-        padding: 15% 12%;
+        padding: 15% 5%;
         font-size: 3rem;
         line-height: 5.6rem;
         width: 55rem;
