@@ -1,7 +1,6 @@
 .nav {
     width: 80%;
-    color: #fff;
-    background-color: #000000a9;
+    background-color: rgba(255, 255, 255, 0.25);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,23 +20,17 @@
     
     &__links {
         margin-left: 1rem;
-        color: #fff;
         
         a {
-            color: #fff;
             padding: 0.8rem 1.5rem;
             border-radius: 5px;
             color: black;
             text-decoration: none;
-
-            &:visited {
-                color: #fff;
-            }
         }
 
         :hover {
             transition: 0.8s;
-            background-color: rgba($color: #af0d1a, $alpha: 0.5);
+            background-color: rgba($color: #af0d1a, $alpha: 0.1);
         }
     }
 }
