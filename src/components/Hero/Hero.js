@@ -32,7 +32,7 @@ function Hero() {
       <Canvas className="hero__canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.3} />
-        <directionalLight position={[-2, 5, 2]} intensity={1} />
+        <directionalLight position={[-2, 5, 2]} intensity={0.9} />
         <directionalLight position={[-2, -2, -1]} intensity={0.2} />
         <Suspense fallback={null}>
           <HeroCube />
