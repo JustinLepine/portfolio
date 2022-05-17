@@ -29,7 +29,6 @@ function Intro() {
     }
   }, [inView, animation]);
   
-
   return (
 <section className='intro' ref={ref}>
     <motion.div className='intro__box' animate={ animation }>

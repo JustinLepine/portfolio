@@ -1,8 +1,34 @@
 import React, { useEffect } from "react";
 import "./Hero.scss";
 import Typewriter from "./Typewriter";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Hero() {
+  
+  const { ref, inView } = useInView({
+    threshold: 0.4,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        transition: { duration: 0.8 },
+        x: 0,
+        opacity: 1,
+      });
+    }
+    if (!inView) {
+      animation.start({
+        transition: { duration: 1 },
+        x: 0,
+        opacity: 0,
+      });
+    }
+  }, [inView, animation]);
+
   useEffect(() => {
     const typewriter = new Typewriter(
       document.body.querySelector(".hero__type")
@@ -25,12 +51,12 @@ function Hero() {
       .start();
   }, []);
 
-  
-
   return (
-    <section id="hero" className="hero">
-      <div id="type" className="hero__type"></div>
-    </section>
+    <div ref={ref}>
+      <motion.section animate={animation} id="hero" className="hero">
+        <div id="type" className="hero__type"></div>
+      </motion.section>
+    </div>
   );
 }
 
