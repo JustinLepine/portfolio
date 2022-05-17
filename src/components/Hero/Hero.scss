@@ -15,4 +15,32 @@
         position: absolute;
         z-index: 2;
     }
+
+    &__logo {
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        width: 30px;
+        transition: 1s;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__logo-2 {
+        position: absolute;
+        left: 85%;
+        top: 90%;
+        width: 30px;
+        transition: 1s;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+
 }

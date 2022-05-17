@@ -1,5 +1,6 @@
 .projects {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0 10%;
     padding: 2% 0 3%;
@@ -11,6 +12,12 @@
 
     li {
         list-style: none;
+    }
+
+    &__main-title {
+        font-size: 4rem;
+        width: 50%;
+        padding-left: 2%;
     }
 
     &__list {

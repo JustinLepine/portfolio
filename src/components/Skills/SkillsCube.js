@@ -7,7 +7,7 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF('/skills.gltf')
   return (
     <group rotation={[0.6,0.7,0]} ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes['main-cube'].geometry} material={materials['Material.015']} />
+      <mesh geometry={nodes['main-cube'].geometry} material={materials['Material.005']} />
       <mesh geometry={nodes['Js-yellow'].geometry} material={materials['Material.003']} position={[0, 1.03, 0]} scale={[0.8, 0.04, 0.8]} />
       <mesh geometry={nodes['Js-text'].geometry} material={materials['Material.007']} position={[-0.15, 1.09, 0.65]} />
       <mesh geometry={nodes['express-white'].geometry} material={materials['Material.005']} position={[0, 0, -1.03]} rotation={[Math.PI / 2, 0, 0]} scale={[0.8, 0.04, 0.8]} />

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Hero.scss";
 import Typewriter from "./Typewriter";
+import Github from "../../assets/svg/github.svg"
+import LinkedIn from "../../assets/svg/linkedIn.svg"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -55,6 +57,12 @@ function Hero() {
     <div ref={ref}>
       <motion.section animate={animation} id="hero" className="hero">
         <div id="type" className="hero__type"></div>
+        <a href="https://github.com/JustinLepine">
+          <img className="hero__logo" src={ Github } alt='github-logo'/>
+        </a>
+        <a href="www.linkedin.com/in/justin-lepine">
+          <img className="hero__logo-2" src={ LinkedIn } alt='github-logo'/>
+        </a>
       </motion.section>
     </div>
   );

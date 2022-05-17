@@ -1,13 +1,28 @@
-import React from 'react';
+import React from "react";
 import ProjectLists from './ProjectLists';
-import Images from '../../assets/images/index';
-import './Projects.scss';
+// import Images from '../../assets/images/index';
+import "./Projects.scss";
 
 function Projects() {
   return (
-    <section id='projects' className='projects'>
-        <ul>
-            {ProjectLists.map((project, index) => {
+    <section id="projects" className="projects">
+      <h2 className="projects__main-title">Projects :</h2>
+      <ul>
+
+
+        {ProjectLists.map((project, index) => {
+          return (
+          <li key={index}>
+              
+
+
+          </li>
+          );
+        })}
+
+
+
+        {/* {ProjectLists.map((project, index) => {
                 return (
                     <li className='projects__list' key={index}>
                         <div className='projects__left'>
@@ -22,10 +37,10 @@ function Projects() {
                         </div>
                     </li>
                 )
-            })}
-        </ul>
+            })} */}
+      </ul>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
