@@ -1,16 +1,22 @@
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    background-color: #DDD;
-    padding: 0 15% 0 0;
+    background-position: 0% 10%;
+    overflow: visible;
     
+    &__canvas {
+        z-index: 1;
+        margin-left: -20rem;
+    }
+
     &__type {
+        color: rgb(219, 175, 255);
+        padding: 15% 12%;
+        font-size: 3rem;
+        line-height: 5.6rem;
+        width: 55rem;
+        height: 12rem;
         position: absolute;
-        line-height: 2.6rem;
-        left: 53%;
-        width: 22rem;
-        height: 13rem;
+        z-index: 2;
     }
 }

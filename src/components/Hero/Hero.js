@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import "./Hero.scss";
 import Typewriter from "./Typewriter";
+import Sphere from "./AnimatedSphere";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 function Hero() {
   useEffect(() => {
-    const typewriter = new Typewriter(document.body.querySelector(".hero__type"));
+    const typewriter = new Typewriter(
+      document.body.querySelector(".hero__type")
+    );
 
     typewriter
       .pauseFor(1500)
@@ -26,6 +31,14 @@ function Hero() {
 
   return (
     <section id="hero" className="hero">
+      <Canvas className="hero__canvas">
+        <OrbitControls enableZoom={false} enableRotate={false} />
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[-2, 5, 2]} intensity={1} />
+        <Suspense fallback={null}>
+          <Sphere />
+        </Suspense>
+      </Canvas>
       <div id="type" className="hero__type"></div>
     </section>
   );
