@@ -19,6 +19,7 @@ function Nav() {
         <ul className='nav__list'>
             <li className='nav__links'><a href='#hero'>Home</a></li>
             <li className='nav__links'><a href='#projects'>Projects</a></li>
+            <li className='nav__links'><a href='#skills'>Skills</a></li>
             <li className='nav__links'>About Me</li>
         </ul>
     </nav>

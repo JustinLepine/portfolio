@@ -1,4 +1,4 @@
-import { Nav, Hero, Intro, Projects } from './components'
+import { Nav, Hero, Intro, Projects, Skills } from './components'
 import "./App.scss";
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
       <Hero />
       <Intro />
       <Projects />
+      <Skills />
     </div>
   );
 }
