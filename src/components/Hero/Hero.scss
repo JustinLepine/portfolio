@@ -13,13 +13,14 @@
         width: 55rem;
         height: 12rem;
         position: absolute;
+        pointer-events: none;
         z-index: 2;
     }
 
     &__logo {
         position: absolute;
         left: 80%;
-        top: 90%;
+        top: 87%;
         width: 30px;
         transition: 1s;
         opacity: 0.8;
@@ -32,10 +33,10 @@
     &__logo-2 {
         position: absolute;
         left: 85%;
-        top: 90%;
+        top: 87%;
         width: 30px;
         transition: 1s;
-        opacity: 0.8;
+        opacity: 0.6;
 
         &:hover {
             opacity: 1;

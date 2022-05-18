@@ -20,48 +20,101 @@
         padding-left: 2%;
     }
 
-    &__list {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__left {
-        margin: 1rem 3rem 1rem 15%;
+    &__project {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    &__id {
-        margin-left: -2rem;
-        font-size: 1.5rem;
+        align-items: center;
+        height: 50rem;
+        margin-bottom: 80rem;
     }
 
-    &__title {
-        font-size: 2.5rem;
-        margin: 0;
-        margin-top: 1.5rem;
+    &__card {
+        margin: 20% 0;
+        width: 600px;
+        height: 350px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        width: 100%;
+        border-radius: 20px;
+
+        & img {
+            width: 250px;
+            position: relative;
+            transform: translate(39%, -55%);
+            pointer-events: none;
+            transition: 0.5s;
+            overflow: visible;
+        }
+        
+        &:hover img {
+            transform: translate(100%, -50%);
+            width: 350px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #d83133;
+            clip-path: circle(120px at center);
+            transition: 0.5s;
+        }
+
+        &:hover:before {
+            background: #0065c3;
+            clip-path: circle(300px at center);
+        }
     }
 
-    &__tech {
-        margin-bottom: 0;
+    &__circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: #d83133;
+            clip-path: circle(150px at center);
+            transition: 0.5s;
+        }
+
+        &:hover:before {
+            background: #0065c3;
+            clip-path: circle(400px at center);
+        }
     }
 
-    &__desc {
-        font-size: 1.2rem;
+    &__content {
+        position: relative;
+        padding: 1rem;
+        height: 12rem;
+        border-radius: 10px;
+        width: 25rem;
+        opacity: 0;
+        transition: 0.2s;
+        bottom: -4rem;
+        left: -2rem;
+        line-height: 2rem;
+        background-color: #fff;
+
+        &:hover {
+            opacity: 1;
+            width: 25rem;
+        }    
     }
 
-    &__right {
-        margin: 6rem 15% 1rem 3rem;
-    }
-
-    &__phone {
-        position: absolute;
-        width: 10rem;
-    }
-
-    &__desktop {
-        margin-top: 2rem;
-        width: 35rem;
+    &__github {
+        position: relative;
+        justify-self: end;
+        height: 2rem;
+        transition: 0.2s;
+        left: -38%;
+        pointer-events:visible;
     }
 }

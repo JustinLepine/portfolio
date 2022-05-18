@@ -1,8 +1,37 @@
 .skills {
     display: flex;
     height: 100vh;
+    margin: 0 10%;
+    
+    &__title {
+        margin: 0 10% -6.5rem;
+        padding: 5% 0 0;
+        font-size: 4rem;
+        width: 50%;
+        padding-left: 2%;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
 
     &__canvas {
+        position: relative;
+        top: -15rem;
+        width: 50rem;
         height: 10rem;
+    }
+
+    &__instructions {
+        color: rgb(146, 146, 146);
+        line-height: 2rem;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: -26rem;
+        position: relative;
     }
 }
