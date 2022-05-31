@@ -8,10 +8,10 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <h2 className="projects__main-title">Projects :</h2>
-      <ul className="projects__project">
+      <ul className="projects__projects">
         {ProjectLists.map((project, index) => {
           return (
-          <li key={index}>
+          <li className="projects__project" key={index}>
               <div className="projects__card">
                 <div className="projects__circle">
                   <div className="projects__content">

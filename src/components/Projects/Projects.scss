@@ -20,12 +20,17 @@
         padding-left: 2%;
     }
 
-    &__project {
+    &__projects {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         height: 50rem;
         margin-bottom: 80rem;
+    }
+
+    &__project {
+        padding: 0 5%;
     }
 
     &__card {
@@ -116,5 +121,10 @@
         transition: 0.2s;
         left: -38%;
         pointer-events:visible;
+        z-index: 10;
+
+        &:hover {
+            position: relative;
+        }
     }
 }
