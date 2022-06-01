@@ -2,17 +2,6 @@ import React from 'react';
 import './Nav.scss';
 
 function Nav() {
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('a[href^="#"]')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
   return (
     <nav className='nav'>
         <h2 className='nav__title'>JL</h2>
