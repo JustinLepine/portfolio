@@ -95,6 +95,15 @@
         }
     }
 
+    &__title {
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__desc {
+        margin: 0 1rem;
+    }
+
     &__content {
         position: relative;
         padding: 1rem;

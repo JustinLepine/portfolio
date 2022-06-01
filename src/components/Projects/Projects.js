@@ -15,8 +15,8 @@ function Projects() {
               <div className="projects__card">
                 <div className="projects__circle">
                   <div className="projects__content">
-                    <h2>{project.id} : {project.title}</h2>
-                    <p>{project.desc}</p>
+                    <h2 className="projects__title">{project.id} : {project.title}</h2>
+                    <p className="projects__desc">{project.desc}</p>
                     <a target='_blank' rel="noreferrer" className="projects__anchor" href={project.github}>
                       <img className="projects__github" alt="github" src={ Github }/>
                     </a>
