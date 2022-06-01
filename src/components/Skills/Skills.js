@@ -1,10 +1,16 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import "./Skills.scss";
 import SkillsCube from "./SkillsCube";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 function Skills() {
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  const handleSkillsFilter = (item) => {
+
+  }
+
   return (
     <section id="skills">
       <h2 className="skills__title">Skills :</h2>
@@ -21,7 +27,17 @@ function Skills() {
           </Canvas>
           <p className="skills__instructions">CLICK AND DRAG</p>
         </div>
-        <div className="skills__right"></div>
+        <div className="skills__right">
+          {['Front End', 'Back End', 'All'].map((item, index) => (
+            <div
+              key={index}
+              onClick={() => handleSkillsFilter(item)}
+              className={``}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
