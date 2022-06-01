@@ -1,3 +1,5 @@
+@use "../../styles/colors" as *;
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -48,14 +50,14 @@
         & img {
             width: 250px;
             position: relative;
-            transform: translate(39%, -55%);
+            transform: translate(27.5%, -60%);
             pointer-events: none;
             transition: 0.5s;
             overflow: visible;
         }
         
         &:hover img {
-            transform: translate(100%, -50%);
+            transform: translate(85%, -60%);
             width: 350px;
         }
 
@@ -64,13 +66,13 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: #d83133;
+            background: $small-circle;
             clip-path: circle(120px at center);
             transition: 0.5s;
         }
 
         &:hover:before {
-            background: #0065c3;
+            background: $big-circle;
             clip-path: circle(300px at center);
         }
     }
@@ -84,13 +86,13 @@
             content: '';
             width: 100%;
             height: 100%;
-            background: #d83133;
+            background: $small-circle;
             clip-path: circle(150px at center);
             transition: 0.5s;
         }
 
         &:hover:before {
-            background: #0065c3;
+            background: $big-circle;
             clip-path: circle(400px at center);
         }
     }
@@ -126,17 +128,16 @@
     &__anchor {
         position: absolute;
         transition: 0.2s;
-        left: 85%;
+        left: 80%;
         top: 78%;
         width: 2rem;
-        
     }
 
     &__github {
         position: relative;
         height: 2rem;
-        left: -1590%;
-        top: 1rem;
+        left: -1425%;
+        top: 1.5rem;
         transition: 0.2s;
 
         z-index: 10;

@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectLists from './ProjectLists';
-import Images from '../../assets/images/index';
 import Github from '../../assets/svg/github.svg'
 import "./Projects.scss";
 
@@ -21,10 +20,9 @@ function Projects() {
                       <img className="projects__github" alt="github" src={ Github }/>
                     </a>
                   </div>
-                  <img alt="phone" src={Images.phone}/>
+                  <img className="projects__phone" alt="phone" src={project.image}/>
                 </div>
               </div>
-
           </li>
           );
         })}
