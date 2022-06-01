@@ -21,7 +21,7 @@ function Projects() {
                       <img className="projects__github" alt="github" src={ Github }/>
                     </a>
                   </div>
-                  <img className="projects__phone" alt="phone" src={Images.phone}/>
+                  <img alt="phone" src={Images.phone}/>
                 </div>
               </div>
 
