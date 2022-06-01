@@ -26,11 +26,11 @@
         justify-content: center;
         align-items: center;
         height: 50rem;
-        margin-bottom: 80rem;
+        margin-bottom: 23rem;
     }
 
     &__project {
-        padding: 0 5%;
+        padding: 2% 5%;
     }
 
     &__card {
@@ -114,13 +114,22 @@
         }    
     }
 
+    &__anchor {
+        position: absolute;
+        transition: 0.2s;
+        left: 85%;
+        top: 78%;
+        width: 2rem;
+        
+    }
+
     &__github {
         position: relative;
-        justify-self: end;
         height: 2rem;
+        left: -1590%;
+        top: 1rem;
         transition: 0.2s;
-        left: -38%;
-        pointer-events:visible;
+
         z-index: 10;
 
         &:hover {

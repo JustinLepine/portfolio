@@ -17,7 +17,7 @@ function Projects() {
                   <div className="projects__content">
                     <h2>{project.id} : {project.title}</h2>
                     <p>{project.desc}</p>
-                    <a href="https://github.com/JustinLepine/bstn-mini-hackathon">
+                    <a target='_blank' rel="noreferrer" className="projects__anchor" href={project.github}>
                       <img className="projects__github" alt="github" src={ Github }/>
                     </a>
                   </div>
