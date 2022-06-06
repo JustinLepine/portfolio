@@ -13,7 +13,7 @@ const SkillsList = [
     },
     {
         title: 'JS',
-        type: 'Front End',
+        type: `'Front End' + 'Back End'`,
         image: Images.js
     },
     {
@@ -26,11 +26,11 @@ const SkillsList = [
         type: 'Front End',
         image: Images.react
     },
-    // {
-    //     title: 'Express',
-    //     type: 'Back End',
-    //     image: Images.express
-    // },
+    {
+        title: 'Express',
+        type: 'Back End',
+        image: Images.express
+    },
     {
         title: 'MySQL',
         type: 'Back End',
@@ -41,11 +41,21 @@ const SkillsList = [
         type: 'Front End',
         image: Images.sass
     },
-    // {
-    //     title: 'THREEJS',
-    //     type: 'Front End',
-    //     image: Images.threejs
-    // }
+    {
+        title: 'THREEJS',
+        type: 'Front End',
+        image: Images.threejs
+    },
+    {
+        title: 'Heroku',
+        type: 'Back End',
+        image: Images.heroku
+    },
+    {
+        title: 'Axios',
+        type: 'Back End',
+        image: Images.axios
+    }
 ]
 
 export default SkillsList;

@@ -7,16 +7,16 @@ import SkillsList from "./SkillsList";
 import "./Skills.scss";
 
 function Skills() {
-  const [filterSkill, setFilterSkill] = useState([]);
-  const [activeFilter, setActiveFilter] = useState("All");
-  const [animateCard, setanimateCard] = useState({ y: 0, opacity: 1 });
+  const [filterSkill, setFilterSkill] = useState(SkillsList);
+  const [activeFilter, setActiveFilter] = useState(['All']);
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   const handleSkillsFilter = (item) => {
     setActiveFilter(item);
-    setanimateCard([{ y: 0, opacity: 0 }]);
+    setAnimateCard([{ y: 0, opacity: 0 }]);
 
     setTimeout(() => {
-      setanimateCard([{ y: 0, opacity: 1 }]);
+      setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === "All") {
         setFilterSkill(SkillsList);

@@ -38,23 +38,24 @@
     }
 
     &__right {
-        margin-top: -5rem;
+        margin-top: 13rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
-
+    
     &__subtitles {
         position: absolute;
-        top: 174rem;
+        top: 173rem;
+        font-size: 1.2rem;
         display: flex;
     }
 
     &__filter {
         display: flex;
         flex-direction: row;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
