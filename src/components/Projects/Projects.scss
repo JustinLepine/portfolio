@@ -64,7 +64,7 @@
         &::before {
             content: '';
             position: absolute;
-            width: 100%;
+            width: 60%;
             height: 100%;
             background: $small-circle;
             clip-path: circle(120px at center);
