@@ -3,44 +3,49 @@ import Images from '../../assets/images/index';
 const SkillsList = [
     {
         title: 'HTML',
-        type: 'front',
+        type: 'Front End',
         image: Images.html
     },
     {
         title: 'CSS',
-        type: 'front',
+        type: 'Front End',
         image: Images.css
     },
     {
         title: 'JS',
-        type: 'front',
+        type: 'Front End',
         image: Images.js
     },
     {
         title: 'NODEJS',
-        type: 'back',
+        type: 'Back End',
         image: Images.node
     },
     {
         title: 'REACT',
-        type: 'front',
+        type: 'Front End',
         image: Images.react
     },
-    {
-        title: 'Express',
-        type: 'back',
-        image: Images.express
-    },
+    // {
+    //     title: 'Express',
+    //     type: 'Back End',
+    //     image: Images.express
+    // },
     {
         title: 'MySQL',
-        type: 'back',
+        type: 'Back End',
         image: Images.mysql
     },
     {
         title: 'SASS',
-        type: 'front',
+        type: 'Front End',
         image: Images.sass
     },
+    // {
+    //     title: 'THREEJS',
+    //     type: 'Front End',
+    //     image: Images.threejs
+    // }
 ]
 
 export default SkillsList;

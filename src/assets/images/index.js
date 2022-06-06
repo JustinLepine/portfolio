@@ -10,6 +10,7 @@ import node from './node.png'
 import react from './react.png'
 import sass from './sass.png'
 import shopify from './shopify.png'
+import threejs from './threejs.png'
 
 
 const Images = {
@@ -24,7 +25,8 @@ const Images = {
     node,
     react,
     sass,
-    shopify
+    shopify,
+    threejs
 };
 
 export default Images;
