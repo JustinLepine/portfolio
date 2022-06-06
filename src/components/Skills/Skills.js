@@ -1,11 +1,13 @@
 import React, { Suspense, useState } from "react";
-import "./Skills.scss";
 import SkillsCube from "./SkillsCube";
+import { motion } from "framer-motion";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import "./Skills.scss";
 
 function Skills() {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [animateCard, setanimateCard] = useState({ y: 0, opacity: 1 });
 
   const handleSkillsFilter = (item) => {
 
@@ -32,12 +34,20 @@ function Skills() {
             <div
               key={index}
               onClick={() => handleSkillsFilter(item)}
-              className={``}
+              className={`skills__filter ${activeFilter === item ? 'item-active' : ''}`}
             >
               {item}
             </div>
+
           ))}
         </div>
+            <motion.div
+            animate={animateCard}
+            transition={{duration: 0.5, delayChildrem: 0.5}}
+            className='skills__portfolio'
+            >
+
+            </motion.div>
       </div>
     </section>
   );

@@ -35,4 +35,36 @@
         position: relative;
         pointer-events: none;
     }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 4rem 0 2rem;
+    }
+
+    &__filter {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        color: #000;
+        font-weight: 800;
+
+    cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0.5rem;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.192);
+        }
+    }
+
+    &__portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 }
