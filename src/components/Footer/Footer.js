@@ -9,7 +9,7 @@ function Footer() {
         <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/justin-lepine">
             <img className="footer__logo-2" src={ LinkedIn } alt='github-logo'/>
         </a>
-        <a className="footer__email" href="mailto:lepine.justin@yahoo.com" target="_blank" rel="noopener noreferrer">lepine.justin@yahoo.com</a>
+        <a className="footer__email" href="mailto:lepine.justin@yahoo.com" >lepine.justin@yahoo.com</a>
         <a target="_blank" rel="noreferrer" href="https://github.com/JustinLepine">
             <img className="footer__logo" src={ Github } alt="github-logo" />
         </a>
