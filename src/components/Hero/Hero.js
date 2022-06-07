@@ -46,8 +46,6 @@ function Hero() {
       .typeString(" I'm Justin Lepine a Web Developer from Montreal, Canada!")
       .pauseFor(500)
       .deleteChars(1)
-      .pauseFor(500)
-      .typeString("🍁")
       .pauseFor(2000)
       .typeString(" : )")
       .start();
