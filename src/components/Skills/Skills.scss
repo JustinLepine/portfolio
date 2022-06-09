@@ -81,7 +81,6 @@
         top: 228rem;
         font-size: 0.9rem;
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         
         @include tablet {
@@ -91,12 +90,12 @@
 
         @include large-tablet {
             font-size: 1.2rem;
-            top: 160rem;
+            top: 155rem;
         }
 
         @include desktop {
             font-size: 1.2rem;
-            top: 163rem;
+            top: 165rem;
         }
     }
 
