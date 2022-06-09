@@ -1,29 +1,54 @@
+@use "../../styles/mixins" as *;
+
 .nav {
-    height: 5rem;
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.25);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 12.45%;
+    width: 80%;
+    padding: 0 10%;
     position: fixed;
     z-index: 3;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    align-items: center;
     transition: all 300ms ease-in-out;
+    justify-content: space-between;
+    height: 8rem;
+    
+    @include tablet {
+        width: 75%;
+        padding: 0 12.45%;
+        height: 5rem;
+    }
 
     &__title {
-        font-size: 2rem;
         text-decoration: none;
         color: black;
+        font-size: 3rem;
+        
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__right {
+        display: flex;
+
     }
 
     &__list {
-        display: flex;
-        list-style: none;
+        visibility: collapse;
+
+        @include tablet {
+            visibility: visible;
+            display: flex;
+            list-style: none;
+        }
     }
     
     &__links {
-        margin-left: 1rem;
         font-weight: 600;
+        
+        @include tablet {
+            margin-left: 1rem;
+        }
         
         a {
             padding: 0.8rem 1.5rem;
@@ -35,6 +60,16 @@
         :hover {
             transition: 0.8s;
             background-color: rgba($color: #af0d1a, $alpha: 0.1);
+        }
+    }
+
+    &__drop {
+        height: 4rem;
+        display: flex;
+        visibility: visible;
+    
+        @include tablet {
+            visibility: collapse;
         }
     }
 }

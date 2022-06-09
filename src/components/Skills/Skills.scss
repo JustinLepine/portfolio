@@ -1,3 +1,5 @@
+@use "../../styles/mixins" as *;
+
 .skills {
     display: flex;
     height: 100vh;
