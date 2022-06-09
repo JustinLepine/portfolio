@@ -5,6 +5,7 @@
     margin: 0 10%;
     
     @include tablet {
+        height: 45vh;
         width: 80%;
     }
     
@@ -24,8 +25,8 @@
         z-index: 2;
 
         @include tablet {
-            font-size: 2rem;
-            width: 36rem;
+            font-size: 1.6rem;
+            width: 32rem;
         }
         
         @include large-tablet {
@@ -38,14 +39,18 @@
 
     &__logo {
         position: absolute;
-        left: 90%;
-        top: 55%;
+        left: 75%;
+        top: 22rem;
         width: 30px;
-        transition: 1s;
         opacity: 0.8;
         
         &:hover {
             opacity: 1;
+        }
+
+        @include tablet {
+            top: 24rem;
+            left: 80%;
         }
         
         @include large-tablet {
@@ -56,20 +61,23 @@
 
     &__logo-2 {
         position: absolute;
-        left: 86%;
-        top: 55%;
+        left: 85%;
+        top: 22rem;
         width: 30px;
-        transition: 1s;
         opacity: 0.6;
         
         &:hover {
             opacity: 1;
         }
         
+        @include tablet {
+            top: 24rem;
+            left: 85%;            
+        }
+
         @include large-tablet {
             top: 70%;
-            left: 85%;
-            
+            left: 85%;            
         }
     }
 }

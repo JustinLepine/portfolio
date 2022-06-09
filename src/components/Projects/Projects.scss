@@ -18,22 +18,40 @@
     }
 
     &__main-title {
-        font-size: 4rem;
+        font-size: 2rem;
         width: 50%;
-        padding-left: 2%;
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+        
+        @include large-tablet {
+            font-size: 4rem;
+        }
     }
 
     &__projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
         height: 50rem;
-        margin-bottom: 23rem;
+        margin-bottom: 98rem;
+        
+        @include tablet {
+            margin-bottom: 120rem;
+        }
+        
+        @include large-tablet {
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 20rem;
+        }
+        
+        @include desktop {
+            margin-bottom: 27rem;
+        }
     }
-
+    
     &__project {
-        padding: 2% 7%;
+        padding: 2% 2%;
     }
 
     &__card {
@@ -51,10 +69,18 @@
         & img {
             width: 250px;
             position: relative;
-            transform: translate(27.5%, -60%);
+            transform: translate(27.5%, -65%);
             pointer-events: none;
             transition: 0.5s;
-            overflow: visible;
+            overflow: hidden;
+            
+            @include tablet {   
+                transform: translate(88%, -65%);
+            }
+
+            @include large-tablet {   
+                transform: translate(70%, -60%);
+            }
         }
         
         &:hover img {
