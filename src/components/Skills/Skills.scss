@@ -73,11 +73,14 @@
     }
 
     &__icon {
-        width: 25rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        @include tablet {
+            width: 25rem;
+        }
     }
     
     &__portfolio {

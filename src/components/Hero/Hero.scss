@@ -2,48 +2,74 @@
 
 .hero {
     display: flex;
-    height: 96vh;
     margin: 0 10%;
-    background-size: cover;
-    background-position: 0% 70%;
-    border-bottom: 1px solid black;
+    
+    @include tablet {
+        width: 80%;
+    }
+    
+    @include large-tablet {
+        height: 75vh;
+        margin: 0 10%;
+    }
     
     &__type {
-        padding: 15% 5%;
-        font-size: 3rem;
-        line-height: 5.6rem;
-        width: 55rem;
+        padding: 10rem 0% 10% 5%;
+        font-size: 1.3rem;
+        line-height: 3.6rem;
+        width: 23rem;
         height: 12rem;
         position: absolute;
         pointer-events: none;
         z-index: 2;
+
+        @include tablet {
+            font-size: 2rem;
+            width: 36rem;
+        }
+        
+        @include large-tablet {
+            line-height: 5.6rem;
+            padding: 10rem 0%;
+            width: 55rem;
+            font-size: 3rem;
+        }
     }
 
     &__logo {
         position: absolute;
-        left: 80%;
-        top: 87%;
+        left: 90%;
+        top: 55%;
         width: 30px;
         transition: 1s;
         opacity: 0.8;
-
+        
         &:hover {
             opacity: 1;
+        }
+        
+        @include large-tablet {
+            top: 70%;
+            left: 80%;            
         }
     }
 
     &__logo-2 {
         position: absolute;
-        left: 85%;
-        top: 87%;
+        left: 86%;
+        top: 55%;
         width: 30px;
         transition: 1s;
         opacity: 0.6;
-
+        
         &:hover {
             opacity: 1;
         }
+        
+        @include large-tablet {
+            top: 70%;
+            left: 85%;
+            
+        }
     }
-
-
 }

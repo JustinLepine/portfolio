@@ -21,7 +21,7 @@
     &__title {
         text-decoration: none;
         color: black;
-        font-size: 3rem;
+        font-size: 2.8rem;
         
         @include tablet {
             font-size: 2rem;
@@ -37,9 +37,15 @@
         visibility: collapse;
 
         @include tablet {
+            margin-top: auto;
+            margin-right: -5.8rem;
             visibility: visible;
             display: flex;
             list-style: none;
+        }
+
+        @include large-tablet {
+            margin-right: -7rem;
         }
     }
     
