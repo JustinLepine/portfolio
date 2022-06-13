@@ -9,7 +9,7 @@ function Nav() {
   const onClick = () => {
     setShowDrop(!showDrop);
   };
-
+  
   return (
     <nav className='nav'>
       <a a href='#hero' className='nav__title'>JL</a>
@@ -21,7 +21,7 @@ function Nav() {
         </ul>
         <div className="nav__drop" onClick={onClick}>
           <img src={Drop} alt="drop"></img>
-          {showDrop && <Dropdown />}
+          {showDrop === true ? <Dropdown /> : ''}
         </div>
       </div>
     </nav>
