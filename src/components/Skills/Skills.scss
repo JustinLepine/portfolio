@@ -71,10 +71,6 @@
         position: relative;
         pointer-events: none;
         top: -15rem;
-
-        @include tablet {
-            top: -10rem;
-        }
     }
 
     &__right {

@@ -2,6 +2,7 @@
 
 .hero {
     display: flex;
+    flex-direction: column;
     margin: 0 10%;
     
     @include tablet {
@@ -41,51 +42,18 @@
         }
     }
 
-    &__logo {
-        position: absolute;
-        left: 73%;
-        top: 34%;
-        width: 30px;
-        opacity: 0.8;
-        
-        &:hover {
-            opacity: 1;
-        }
-
-        @include large-phone {
-            left: 75%;
-        }
-
-        @include tablet {
-            top: 40%;
-            left: 80%;
-        }
-        
-        @include large-tablet {
-            top: 58%;
-            left: 80%;            
-        }
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
     }
 
-    &__logo-2 {
-        position: absolute;
-        left: 84%;
-        top: 34%;
+    &__logo {
         width: 30px;
         opacity: 0.6;
+        padding-left: 1rem;
         
         &:hover {
             opacity: 1;
-        }
-        
-        @include tablet {
-            top: 40%;
-            left: 85%;            
-        }
-
-        @include large-tablet {
-            top: 58%;
-            left: 85%;            
         }
     }
 }
