@@ -10,19 +10,23 @@
     }
     
     @include large-tablet {
-        height: 75vh;
+        height: 60vh;
         margin: 0 10%;
     }
     
     &__type {
-        padding: 10rem 0% 10% 5%;
-        font-size: 1.3rem;
+        padding: 8rem 0% 10% 5%;
+        font-size: 0.8rem;
         line-height: 3.6rem;
-        width: 23rem;
+        width: 16rem;
         height: 12rem;
-        position: absolute;
         pointer-events: none;
         z-index: 2;
+        
+        @include large-phone {
+            font-size: 1rem;
+            width: 19rem;
+        }
 
         @include tablet {
             font-size: 1.6rem;
@@ -32,15 +36,15 @@
         @include large-tablet {
             line-height: 5.6rem;
             padding: 10rem 0%;
-            width: 55rem;
-            font-size: 3rem;
+            width: 50rem;
+            font-size: 2.5rem;
         }
     }
 
     &__logo {
         position: absolute;
-        left: 75%;
-        top: 22rem;
+        left: 73%;
+        top: 34%;
         width: 30px;
         opacity: 0.8;
         
@@ -48,13 +52,17 @@
             opacity: 1;
         }
 
+        @include large-phone {
+            left: 75%;
+        }
+
         @include tablet {
-            top: 24rem;
+            top: 40%;
             left: 80%;
         }
         
         @include large-tablet {
-            top: 70%;
+            top: 58%;
             left: 80%;            
         }
     }
@@ -62,7 +70,7 @@
     &__logo-2 {
         position: absolute;
         left: 84%;
-        top: 22rem;
+        top: 34%;
         width: 30px;
         opacity: 0.6;
         
@@ -71,12 +79,12 @@
         }
         
         @include tablet {
-            top: 24rem;
+            top: 40%;
             left: 85%;            
         }
 
         @include large-tablet {
-            top: 70%;
+            top: 58%;
             left: 85%;            
         }
     }

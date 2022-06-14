@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25rem 10% 0;
+    margin: 1rem 10% 0;
     padding: 2% 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
@@ -18,10 +18,14 @@
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.2rem;
         width: 50%;
 
-        @include large-tablet {
+        @include large-phone {
+            font-size: 1.5rem;
+        }
+
+        @include tablet {
             font-size: 2.5rem;
         }
         

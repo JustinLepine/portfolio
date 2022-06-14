@@ -6,10 +6,12 @@ function Nav() {
   
   return (
     <nav className='nav'>
-      <Link to="hero" smooth={true} duration={0} delay={0}>
-        <p>JL</p>
-      </Link>
-      <div>
+      <div className='nav__left'>
+        <Link to="hero" smooth={true} duration={0} delay={0}>
+          <p className='nav__logo'>JL</p>
+        </Link>
+      </div>
+      <div className='nav__right'>
         <Link className='nav__links' to="projects" smooth={true} duration={0} delay={0}>
           Projects
         </Link>

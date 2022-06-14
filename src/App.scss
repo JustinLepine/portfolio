@@ -7,15 +7,15 @@ html {
 .app {
 	font-family: $font-libre;
   
-  	&__scroll-down {
-	  Nav {
-		  transform: translate3d(0, -280%, 0);
-		}
-	}
+  	// &__scroll-down {
+	//   Nav {
+	// 	  transform: translate3d(0, -280%, 0);
+	// 	}
+	// }
 	
-	&__scroll-up {
-		Nav {
-			filter: drop-shadow(0 -8px 20px rgb(170, 170, 170));
-		}
-	}
+	// &__scroll-up {
+	// 	Nav {
+	// 		filter: drop-shadow(0 -8px 20px rgb(170, 170, 170));
+	// 	}
+	// }
 }
