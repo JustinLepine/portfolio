@@ -38,13 +38,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 80vw;
+        height: 35rem;
+
+        @include large-phone {
+            height: 50rem;
+        }
+        
+        @include tablet {
+            width: 50vw;
+        }
+        
+        @include desktop {
+            height: 55rem;
+        }
     }
 
     &__canvas {
+        display: flex;
         position: relative;
         top: -10rem;
         width: 50rem;
-        height: 10rem;
+        height: 50rem;
+
     }
 
     &__instructions {
