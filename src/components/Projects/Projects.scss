@@ -50,12 +50,19 @@
         }
         
         @include desktop {
-            margin-bottom: 27rem;
+            margin-bottom: 25rem;
         }
     }
     
     &__project {
+        transform: scale(0.8);
+        transform: translateX(-20%);
         padding: 2% 2%;
+
+        @include large-phone {
+            transform: scale(1);
+            transform: translateX(0);
+        }
     }
 
     &__card {

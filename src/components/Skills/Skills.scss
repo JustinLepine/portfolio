@@ -3,6 +3,8 @@
 .skills {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 138vh;
     margin: 5rem 10% 0;
     
@@ -12,20 +14,16 @@
         height: 71vh;
         flex-direction: row;
     }
-
-    @include large-tablet {
-        height: 60vh;
-    }
     
     &__title {
         padding-left: 10%;
         font-size: 1.2rem;
         width: 50%;
-
+        
         @include large-phone {
             font-size: 1.5rem;
         }
-
+        
         @include tablet {
             font-size: 2.5rem;
         }
@@ -40,11 +38,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80vw;
-        
-        @include tablet {        
-            width: 50vw;
-        }
     }
 
     &__canvas {
@@ -69,37 +62,24 @@
     }
 
     &__right {
+        margin-top: -10rem;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-        margin-top: -25rem;
-        
-        @include tablet {
-            margin-top: 13rem;
-        }
     }
     
     &__subtitles {
-        position: absolute;
-        top: 228rem;
+        height: 5rem;
         font-size: 0.9rem;
         display: flex;
         align-items: center;
         
         @include tablet {
             font-size: 1rem;
-            top: 230rem;
         }
 
         @include large-tablet {
             font-size: 1.2rem;
-            top: 155rem;
-        }
-
-        @include desktop {
-            font-size: 1.2rem;
-            top: 165rem;
         }
     }
 
@@ -126,16 +106,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 19rem;
         width: 20rem;
-
-        @include tablet {
-            margin-top: -15rem;
-            width: 25rem;
-        }
-
+        
         @include large-tablet {
-            margin-top: -15rem;
+            width: 25rem;
         }
     }
     
