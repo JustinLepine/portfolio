@@ -48,10 +48,6 @@
         @include tablet {
             width: 50vw;
         }
-        
-        @include desktop {
-            height: 55rem;
-        }
     }
 
     &__canvas {
@@ -60,7 +56,6 @@
         top: -10rem;
         width: 50rem;
         height: 50rem;
-
     }
 
     &__instructions {
@@ -78,6 +73,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 5rem;
+        
+        @include tablet {
+            margin-bottom: 0rem;
+            margin-top: -15rem;
+        }
+
+        @include large-tablet {
+            width: 50rem;
+        }
     }
     
     &__subtitles {
