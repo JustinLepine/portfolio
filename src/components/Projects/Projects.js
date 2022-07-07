@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectLists from './ProjectLists';
-import Github from '../../assets/svg/github.svg'
+import Github from '../../assets/svg/github.svg';
 import "./Projects.scss";
 
 function Projects() {

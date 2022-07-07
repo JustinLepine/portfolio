@@ -1,0 +1,63 @@
+@use "../../styles/colors" as *;
+@use "../../styles/mixins" as *;
+
+.apps {
+    margin: 2rem 10%;
+    
+    &__list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    &__left {
+        width: 100%;
+
+        @include tablet {
+            width: 50%;
+        }
+    }
+
+    &__right {
+        margin: auto;
+    }
+
+    &__desc {
+        width: 16rem;
+
+        @include tablet {
+            width: 25rem;
+        }
+    }
+
+    &__img {
+        width: 12rem;
+    }
+
+    &__projects {
+        margin-top: 3rem;
+        line-height: 1.6rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        
+        @include tablet {
+            flex-direction: row;
+
+            &:nth-child(even) {
+                margin-left: -2rem;
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    &__github {
+        width: 30px;
+        opacity: 0.6;
+        transition: 0.8s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
