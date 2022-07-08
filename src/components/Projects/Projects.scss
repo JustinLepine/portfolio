@@ -15,16 +15,22 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+        padding-bottom: 2rem;
         
         @include tablet {
-            margin-top: 1rem;
+            padding-bottom: 3.8rem;
+            margin: 3.5rem 0;
             flex-direction: row;
 
             &:nth-child(even) {
                 margin-left: -3rem;
                 flex-direction: row-reverse;
             }
+        }
+
+        @include large-tablet {
+            margin: 5rem 0;
         }
     }
 
@@ -68,18 +74,30 @@
         }
     }
 
-    &__desc {
-        width: 16rem;
-
+    &__subtitle {
         @include tablet {
-            width: 18rem;
-        }
-
-        @include large-tablet {
-            width: 25rem;
+            font-size: 1.3rem;
         }
 
         @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__desc {
+        width: 16rem;
+        
+        @include tablet {
+            width: 18rem;
+            font-size: 1.2rem;
+        }
+        
+        @include large-tablet {
+            width: 25rem;
+        }
+        
+        @include desktop {
+            font-size: 1.4rem;
             width: 30rem;
         }
     }

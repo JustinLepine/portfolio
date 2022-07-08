@@ -14,7 +14,7 @@ function Projects() {
             <li className="projects__projects" key={index}>
               <div className="projects__left">
                 <div className="projects__top">
-                  <h3>{project.id} : {project.title}</h3>
+                  <h3 className="projects__subtitle">{project.id} : {project.title}</h3>
                   <p className="projects__desc">{project.desc}</p>
                 </div>
                 <div className="projects__bottom">
