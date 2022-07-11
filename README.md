@@ -5,6 +5,9 @@
 <div align="center">
   <img alt="Demo" src="./src/assets/images/screenshot.png" />
 </div>
+<div align="center">
+  <img alt="Demo" src="./src/assets/svg/made-with-react.svg" />
+</div>
 
 <br/>
 
