@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90rem;
+    height: 85rem;
     margin: 2rem 10% 6rem;   
     
     @include tablet {
@@ -28,6 +28,7 @@
         }
         
         @include large-tablet {
+            padding-left: 7%;
             font-size: 4rem;
         }
     }
@@ -38,7 +39,7 @@
         justify-content: center;
         align-items: center;
         width: 80vw;
-        height: 35rem;
+        height: 40rem;
 
         @include large-phone {
             width: 70vw;

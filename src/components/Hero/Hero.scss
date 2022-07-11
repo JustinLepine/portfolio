@@ -6,12 +6,12 @@
     margin: 0 10%;
     
     @include tablet {
-        height: 45vh;
+        height: 26rem;
         width: 80%;
     }
     
     @include large-tablet {
-        height: 60vh;
+        height: 33rem;
         margin: 0 10%;
     }
     

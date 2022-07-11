@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectLists from "./ProjectList";
 import Github from '../../assets/svg/github.svg';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./Projects.scss";
 
 function Projects() {
   const data = ProjectLists;
 
+  const { ref, inView } = useInView({
+    threshold: 0.08,
+  });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        transition: { duration: 0.8 },
+        x: 0,
+        opacity: 1,
+      });
+    }
+    if (!inView) {
+      animation.start({
+        transition: { duration: 1 },
+        x: 0,
+        opacity: 0,
+      });
+    }
+  }, [inView, animation]);
+
   return (
-    <section id="projects" className="projects">
+    <motion.section animate={animation} ref= {ref} id="projects" className="projects">
       <ul className="projects__list">
         {data.map((project, index) => {
           return (
@@ -31,7 +56,7 @@ function Projects() {
           );
         })}
       </ul>
-    </section>
+    </motion.section>
   );
 }
 
