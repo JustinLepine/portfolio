@@ -5,18 +5,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 138vh;
-    margin: 2rem 10% 6rem;
-    
+    height: 90rem;
+    margin: 2rem 10% 6rem;   
     
     @include tablet {
-        height: 71vh;
+        height: 38rem;
         flex-direction: row;
     }
     
     &__title {
         padding-left: 10%;
         font-size: 1.2rem;
+        margin-bottom: 2rem;
         width: 50%;
         
         @include large-phone {
@@ -107,7 +107,7 @@
     &__filter {
         display: flex;
         flex-direction: row;
-        padding: 0.5rem 1.5rem;
+        padding: 0.6rem 1.1rem;
         border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
