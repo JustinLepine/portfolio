@@ -1,48 +1,59 @@
-import React, { useState } from 'react';
-import ProjectLists from '../Projects/ProjectList';
-import Github from '../../assets/svg/github.svg';
-import './Slider.scss' ;
-import ArrowBack from '../../assets/svg/arrow-back.svg';
-import ArrowForward from '../../assets/svg/arrow-forward.svg';
+import React, { useState } from "react";
+import Github from "../../assets/svg/github.svg";
+import ArrowBack from "../../assets/svg/arrow-back.svg";
+import ArrowForward from "../../assets/svg/arrow-forward.svg";
+import "./Slider.scss";
 
-const Slider = () => {
-const [current, setCurrent] = useState(0);
-const length = ProjectLists.length;
-console.log(current)
+const Slider = (props) => {
+  const data = props.ProjectLists;
+  const [current, setCurrent] = useState(0);
+  const length = data.length;
 
-const nextSlide = () => {
+  const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-}
+  };
 
-const prevSlide = () => {
+  const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
-}
+  };
 
-if (!Array.isArray(ProjectLists) || ProjectLists.length <= 0) {
+  if (!Array.isArray(data) || data.length <= 0) {
     return null;
-}
+  }
 
-return (
-    <section className='slider'>
-        <img src={ArrowBack} alt='arrow-back' onClick={prevSlide} className='slider__arrow' />
-        {ProjectLists.map((project, index) => {
-            return (
-                <div key={index} className='slider__card'>
-                    <div className='slider__info'>
-                        <h1 className='slider__title'>{project.id} : {project.title}</h1>
-                        <p>{project.desc}</p>
-                        <div>
-                            <p className='slider__tech'>{project.tech}</p>
-                            <img className='slider__github' src={Github} alt='github'/>
-                        </div>
-                    </div>
-                    <img src={project.image} alt='preview' className='slider__img' />
+  return (
+    <>
+    <h1 className="slider__title">Projects :</h1>
+    <section className="slider">
+      <img src={ArrowBack} alt="arrow-back" onClick={prevSlide} className="slider__arrow" />
+      {data.map((project, index) => {
+          return (
+              <div key={index} className="slider__card">
+            {index === current && (
+                <>
+                <div className="slider__info">
+                  <h2>{project.id} : {project.title}</h2>
+                  <p className="slider__desc">{project.desc}</p>
+                  <div>
+                    <p>{project.tech}</p>
+                    <img className="slider__github" src={Github} alt="github" />
+                  </div>
                 </div>
-            )
-        })}
-        <img src={ArrowForward} alt='arrow' onClick={nextSlide} className='slider__arrow' />
+                <img src={project.image} alt="preview" className="slider__img" />
+              </>
+            )}
+          </div>
+        );
+    })}
+      <img
+        src={ArrowForward}
+        alt="arrow"
+        onClick={nextSlide}
+        className="slider__arrow"
+        />
     </section>
-  )
-}
+        </>
+  );
+};
 
 export default Slider;

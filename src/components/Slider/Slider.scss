@@ -2,9 +2,16 @@
 
 .slider {
     display: flex;
-    // flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0);
+    justify-content: center;
     align-items: center;
-    margin: 3rem 15%;
+    margin: 0 10% 3rem;
+    padding-bottom: 2rem;
+
+    &__title {
+        font-size: 3rem;
+        margin: 2rem 10%;
+    }
 
     &__card {
         display: flex;
@@ -22,6 +29,10 @@
         @include tablet {
             margin-right: 2rem;
         }
+    }
+
+    &__desc {
+        max-width: 25rem;
     }
 
     &__github {
