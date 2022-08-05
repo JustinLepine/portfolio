@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import ProjectLists from "./ProjectList";
 import Github from '../../assets/svg/github.svg';
+// import Preview from '../../assets/svg/preview.svg';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Projects.scss";
@@ -46,6 +47,7 @@ function Projects() {
                 <p className="projects__tech">Tech : {project.tech}</p>
                 <a target='_blank' rel="noreferrer" className="projects__anchor" href={project.github}>
                   <img className="projects__github" alt="github" src={ Github }/>
+                  {/* <img className="projects__preview" alt="preview" src={ Preview }/> */}
                 </a>
                 </div>
               </div>

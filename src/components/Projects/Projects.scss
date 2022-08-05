@@ -1,4 +1,3 @@
-@use "../../styles/colors" as *;
 @use "../../styles/mixins" as *;
 
 .projects {
@@ -122,8 +121,23 @@
         width: 12rem;
     }
 
+    &__anchor {
+        display: flex;
+    }
+
     &__github {
         width: 30px;
+        opacity: 0.6;
+        transition: 0.8s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__preview {
+        margin-left: 0.5rem;
+        width: 38px;
         opacity: 0.6;
         transition: 0.8s;
 
