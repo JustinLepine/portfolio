@@ -7,6 +7,12 @@
     align-items: center;
     margin: 0 10% 3rem;
     padding-bottom: 2rem;
+    min-height: 700px;
+
+    @include tablet {
+        min-height: 400px;
+        padding-bottom: 5rem;
+    }
 
     &__title {
         font-size: 3rem;

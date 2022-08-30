@@ -45,12 +45,7 @@ const Slider = (props) => {
           </div>
         );
     })}
-      <img
-        src={ArrowForward}
-        alt="arrow"
-        onClick={nextSlide}
-        className="slider__arrow"
-        />
+      <img src={ArrowForward} alt="arrow" onClick={nextSlide} className="slider__arrow" />
     </section>
         </>
   );
