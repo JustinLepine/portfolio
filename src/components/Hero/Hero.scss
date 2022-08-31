@@ -3,15 +3,17 @@
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
     margin: 0 10%;
     
     @include tablet {
-        height: 26rem;
+        height: 27rem;
         width: 80%;
     }
     
     @include large-tablet {
-        height: 33rem;
+        height: 35rem;
         margin: 0 10%;
     }
     
