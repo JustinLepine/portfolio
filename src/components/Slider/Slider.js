@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Github from "../../assets/svg/github.svg";
 import ArrowBack from "../../assets/svg/arrow-back.svg";
 import ArrowForward from "../../assets/svg/arrow-forward.svg";
+import { motion } from "framer-motion";
 import "./Slider.scss";
 
 const Slider = (props) => {
@@ -28,9 +29,14 @@ const Slider = (props) => {
       <img src={ArrowBack} alt="arrow-back" onClick={prevSlide} className="slider__arrow" />
       {data.map((project, index) => {
           return (
-              <div key={index} className="slider__card">
+              <div key={index}>
             {index === current && (
-                <>
+              <motion.div  
+              className="slider__card"   
+              initial={{opacity: 0, translateX:'-100%'}}
+              animate={{opacity: 1, translateX: '-0%'}}
+              exit={{opacity: 0, translateX:'-100%' }}
+              >
                 <div className="slider__info">
                   <h2>{project.id} : {project.title}</h2>
                   <p className="slider__desc">{project.desc}</p>
@@ -40,7 +46,7 @@ const Slider = (props) => {
                   </div>
                 </div>
                 <img src={project.image} alt="preview" className="slider__img" />
-              </>
+              </motion.div>
             )}
           </div>
         );
