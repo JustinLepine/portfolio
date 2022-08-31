@@ -58,6 +58,7 @@
     &__arrow {
         position: inherit;
         top: 50%;
+        opacity: 0.8;
 
         @include tablet {
             margin: 1rem;
