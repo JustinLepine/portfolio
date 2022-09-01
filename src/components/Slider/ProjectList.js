@@ -38,11 +38,19 @@ const ProjectLists = [
         title: 'to0ol',
         tech: 'React, Sass, JS',
         desc: 'Creating a all in one app that contain Currency + Mass + Distance + Temp + Area + Volume + Speed + Time converter along with a ToDo and Calculator',
-        github: 'https://github.com/JustinLepine/capstone-can-of-worms',
+        github: 'https://github.com/JustinLepine/tool',
         image: Images.toool
     },
     {
         id: '06',
+        title: 'Life Coach',
+        tech: 'React, Sass, JS, EmailJS',
+        desc: 'Freelance project for a life coach website, with email API integration',
+        github: 'https://github.com/JustinLepine/lise-lavoie-lifecoach',
+        image: Images.lise
+    },
+    {
+        id: '07',
         title: '2D Unity Game',
         tech: 'Unity, C#, Asprite',
         desc: 'Building a Unity game that will be a dungeon crawler. Building the assets in A sprite a pixel art tool and using C# to write custom scripts for the AI.',

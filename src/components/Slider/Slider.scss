@@ -64,5 +64,9 @@
         @include tablet {
             margin: 1rem;
         }
+        
+        @include desktop {
+            margin: 2rem;
+        }
     }
 }
