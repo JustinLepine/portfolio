@@ -1,4 +1,5 @@
 import axios from './axios.png'
+import blender from './blender.png'
 import c from './c.png'
 import css from './css.png'
 import express from './express.png'
@@ -15,6 +16,7 @@ import unity from './unity.png'
 
 const Images = {
     axios,
+    blender,
     c,
     css,
     express,

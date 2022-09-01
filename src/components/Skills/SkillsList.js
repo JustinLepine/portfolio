@@ -56,6 +56,12 @@ const SkillsList = [
         image: Images.threejs
     },
     {
+        title: 'Blender',
+        type: 'Front End',
+        learning: 'false',
+        image: Images.blender
+    },
+    {
         title: 'Heroku',
         type: 'Back End',
         learning: 'false',
