@@ -8,7 +8,7 @@ import SkillsList from "./SkillsList";
 import "./Skills.scss";
 
 function Skills() {
-  const [filterSkill, setFilterSkill] = useState(SkillsList);
+  const [filterSkill, setFilterSkill] = useState(SkillsList.filter((skill) => skill.learning.includes('false')));
   const [activeFilter, setActiveFilter] = useState(['All']);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -43,7 +43,7 @@ function Skills() {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === "All") {
-        setFilterSkill(SkillsList);
+        setFilterSkill(SkillsList.filter((skill) => skill.learning.includes('false')));
       } else {
         setFilterSkill(SkillsList.filter((skill) => skill.type.includes(item)));
       }
@@ -70,13 +70,7 @@ function Skills() {
         <div className="skills__right">
           <div className="skills__subtitles">
             {["Front End", "All", "Back End", "Learning"].map((item, index) => (
-              <div
-                key={index}
-                onClick={() => handleSkillsFilter(item)}
-                className={`skills__filter ${
-                  activeFilter === item ? "item-active" : ""
-                }`}
-              >
+              <div key={index} onClick={() => handleSkillsFilter(item)} className={`skills__filter ${ activeFilter === item ? "item-active" : "" }`} >
                 {item}
               </div>
             ))}
