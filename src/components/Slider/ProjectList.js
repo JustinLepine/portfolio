@@ -32,6 +32,22 @@ const ProjectLists = [
         desc: 'Capstone project for BrainStation. I chose a fishing app to help better manage fishing equipment inventory',
         github: 'https://github.com/JustinLepine/capstone-can-of-worms',
         image: Images.canofworms
+    },
+    {
+        id: '05',
+        title: 'to0ol',
+        tech: 'React, Sass, JS',
+        desc: 'Creating a all in one app that contain Currency + Mass + Distance + Temp + Area + Volume + Speed + Time converter along with a ToDo and Calculator',
+        github: 'https://github.com/JustinLepine/capstone-can-of-worms',
+        image: Images.toool
+    },
+    {
+        id: '06',
+        title: '2D Unity Game',
+        tech: 'Unity, C#, Asprite',
+        desc: 'Building a Unity game that will be a dungeon crawler. Building the assets in A sprite a pixel art tool and using C# to write custom scripts for the AI.',
+        github: 'https://github.com/JustinLepine/unity2dtest',
+        image: Images.gamegif
     }
 ]
 
