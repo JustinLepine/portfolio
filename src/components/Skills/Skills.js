@@ -65,10 +65,11 @@ function Skills() {
             </Suspense>
           </Canvas>
           <p className="skills__instructions">CLICK AND DRAG</p>
+          <p className="skills__disc">Cube was made with Blender and ThreeJS</p>
         </div>
         <div className="skills__right">
           <div className="skills__subtitles">
-            {["Front End", "All", "Back End"].map((item, index) => (
+            {["Front End", "All", "Back End", "Learning"].map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleSkillsFilter(item)}

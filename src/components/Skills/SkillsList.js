@@ -55,7 +55,22 @@ const SkillsList = [
         title: 'Axios',
         type: 'Back End',
         image: Images.axios
-    }
+    },
+    {
+        title: 'C #',
+        type: 'Learning',
+        image: Images.c
+    },
+    {
+        title: 'Unity',
+        type: 'Learning',
+        image: Images.unity
+    },
+    {
+        title: 'PHP',
+        type: 'Learning',
+        image: Images.php
+    },
 ]
 
 export default SkillsList;
