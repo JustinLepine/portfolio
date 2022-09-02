@@ -90,7 +90,7 @@ const SkillsList = [
         type: 'Learning',
         learning: 'true',
         image: Images.php
-    },
+    }
 ]
 
 export default SkillsList;

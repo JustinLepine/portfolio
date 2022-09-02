@@ -1,10 +1,12 @@
 @use "../../styles/mixins" as *;
 
 .hobbies {
+    border-top: 1px solid rgba(0, 0, 0);
+    margin: 0 10% 3rem;
     display: flex;
+    flex-direction: column;
 
     &__title {
-        padding-left: 10%;
         font-size: 1.2rem;
         margin-bottom: 2rem;
         width: 50%;
@@ -18,7 +20,6 @@
         }
         
         @include large-tablet {
-            padding-left: 9.8%;
             font-size: 4rem;
         }
     }
