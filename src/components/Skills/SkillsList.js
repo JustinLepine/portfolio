@@ -90,6 +90,18 @@ const SkillsList = [
         type: 'Learning',
         learning: 'true',
         image: Images.php
+    },
+    {
+        title: 'Typescript',
+        type: 'Front End',
+        learning: 'false',
+        image: Images.typescript
+    },
+    {
+        title: 'MongoDB',
+        type: 'Learning',
+        learning: 'true',
+        image: Images.mongodb
     }
 ]
 
