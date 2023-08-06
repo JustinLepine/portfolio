@@ -32,6 +32,12 @@ const SkillsList = [
         image: Images.react
     },
     {
+        title: 'Typescript',
+        type: 'Front End',
+        learning: 'false',
+        image: Images.typescript
+    },
+    {
         title: 'Express',
         type: 'Back End',
         learning: 'false',
@@ -90,12 +96,6 @@ const SkillsList = [
         type: 'Learning',
         learning: 'true',
         image: Images.php
-    },
-    {
-        title: 'Typescript',
-        type: 'Front End',
-        learning: 'false',
-        image: Images.typescript
     },
     {
         title: 'MongoDB',
