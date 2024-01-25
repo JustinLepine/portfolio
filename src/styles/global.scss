@@ -1,0 +1,23 @@
+@use "./mixins.scss" as *;
+@use "./typography.scss" as *;
+
+body {
+  margin: 0;
+  font-family: $font-montserrat;
+}
+
+.nav {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  padding: 1rem;
+  background-color: red;
+  
+  @include tablet {
+    background-color: blue;
+  }
+
+  &_name {
+    font-family: $font-montserrat;
+  }
+}
