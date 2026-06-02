@@ -1,0 +1,14 @@
+.typewriter {
+  .highlighted {
+    background: #0088dd44;
+    border-radius: 2px;
+  }
+
+  .caret {
+    color: #0088dd;
+    font-weight: 100;
+
+    &.visible { opacity: 1; }
+    &.hidden  { opacity: 0; }
+  }
+}

@@ -1,0 +1,21 @@
+@use './mixins' as *;
+@use './colors' as *;
+@use './breakpoints' as *;
+
+.skill {
+  width: 100%;
+  overflow: hidden;
+
+  &-reel {
+    @include flex-row;
+    width: max-content;
+    animation: move 12s linear infinite;
+
+    &_text {
+      margin: 0.4rem 1rem;
+      opacity: 0.25;
+      user-select: none;
+      white-space: nowrap;
+    }
+  }
+}

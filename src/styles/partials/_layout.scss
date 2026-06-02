@@ -1,0 +1,16 @@
+@use './colors' as *;
+@use './keyframes' as *;
+@use './breakpoints' as *;
+@use './variables' as *;
+@use './mixins' as *;
+
+.layout {
+  color: $color;
+
+  &_header {
+    width: 100vw;
+    position: relative;
+    z-index: 100;
+    @include flex-row;
+  }
+}

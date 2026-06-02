@@ -1,0 +1,125 @@
+@use './mixins' as *;
+@use './colors' as *;
+@use './breakpoints' as *;
+@use './variables' as *;
+
+.nav {
+  width: $nav-width;
+  margin-top: 3rem;
+  padding: 1rem 1.8rem;
+  letter-spacing: 0.17rem;
+
+  @include nav-card;
+  @include flex-row;
+
+  justify-content: space-between;
+
+  &_logo {
+    height: 3rem;
+    opacity: 0.7;
+    image-rendering: pixelated;
+    transition: ease-in-out 400ms;
+
+    &:hover {
+      filter: drop-shadow(0 0 10px rgba(186, 217, 238, 0.6));
+      opacity: 1;
+    }
+  }
+
+  &_home, > a {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+
+    @include breakpoint-large-tablet {
+      font-size: 2rem;
+    }
+  }
+}
+
+.menu {
+  border: 1px $color solid;
+  border-radius: $border-radius;
+  padding: 0.4rem 0.5rem 0.12rem;
+  z-index: 10;
+
+  &_img {
+    width: 1.8rem;
+  }
+
+  &-large {
+    display: flex;
+    letter-spacing: 0.1rem;
+
+    & a {
+        text-decoration: none;
+        color: $color;
+      }
+
+    &_option {
+      border-radius: $border-radius;
+      transition: 450ms;
+      padding: 0.5rem 0.9rem;
+      font-size: 0.9rem;
+      border: 1px solid #ffffff00;
+
+      &:hover {
+        cursor: pointer;
+        user-select: none;
+        border: 1px solid #ffffff0e;
+      }
+
+      @include breakpoint-large-tablet {
+        margin: 0 0.3rem;
+        letter-spacing: 0.17rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.dropdown {
+  z-index: 15;
+
+  &_list {
+    padding: 1rem;
+    border-radius: $border-radius;
+    background-color: #ffffff08;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #ffffff10;
+    pointer-events: auto;
+
+    & a {
+      color: $color;
+      text-decoration: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-option {
+      margin: 0.6rem 0;
+      text-align: end;
+      letter-spacing: 0.17rem;
+    }
+  }
+
+  &-start {
+    position: fixed;
+    opacity: 0;
+    right: $dropdown-right;
+  }
+
+  &-in {
+    animation: dropdown-in-down 400ms $dropdown-bezier;
+    @include dropdown-styling;
+  }
+
+  &-out {
+    animation: dropdown-out-up 400ms $dropdown-bezier;
+    @include dropdown-styling;
+  }
+}

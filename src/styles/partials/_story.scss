@@ -1,0 +1,47 @@
+@use './mixins' as *;
+@use './colors' as *;
+@use './breakpoints' as *;
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+
+  &_card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition: opacity 700ms ease;
+    justify-content: space-around;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @include breakpoint-large-tablet {
+      gap: 4rem;
+      justify-content: center;
+    }
+
+    &_canvas {
+      flex-shrink: 0;
+      width: 220px;
+      height: 220px;
+      cursor: default;
+    }
+
+    &_content {
+      @include content-card;
+      user-select: none;
+      opacity: 0.9;
+      flex: 0.8;
+      padding: 1rem 1rem;
+
+      @include breakpoint-large-tablet {
+        flex: 0.58;
+      }
+    }
+  }
+}

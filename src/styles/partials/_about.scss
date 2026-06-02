@@ -1,0 +1,89 @@
+@use './mixins' as *;
+@use './colors' as *;
+@use './breakpoints' as *;
+
+.about {
+  width: 100%;
+  @include flex-row;
+  padding: 4rem 0rem;
+  transition: opacity 800ms ease;
+
+  @include breakpoint-large-tablet {
+    padding: 4rem 1rem;
+  }
+
+  &_card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include breakpoint-large-tablet {
+      width: 60%;
+    }
+  }
+
+  &_greeting {
+    margin: 0;
+    font-size: 1.8rem;
+    color: $color;
+
+    @include breakpoint-large-tablet {
+      font-size: 2.2rem;
+    }
+  }
+
+  &_heading {
+    margin: 0;
+    font-size: 1.8rem;
+    color: $color;
+
+    @include breakpoint-large-tablet {
+      font-size: 2.2rem;
+    }
+  }
+
+  &_bio {
+    margin: 0;
+    color: $color;
+    opacity: 0.85;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+
+  &_blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+
+    &-label {
+      color: $color-alt;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      min-width: 130px;
+      flex-shrink: 0;
+
+      @include breakpoint-large-tablet {
+        font-size: 0.75rem;
+      }
+    }
+
+    &-value {
+      color: $color;
+      line-height: 1rem;
+      font-size: 0.8rem;
+
+      @include breakpoint-large-tablet {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

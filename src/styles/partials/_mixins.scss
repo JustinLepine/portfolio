@@ -1,0 +1,65 @@
+@use './breakpoints' as *;
+@use './variables' as *;
+@use './colors' as *;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin colors {
+  color: $color;
+  background-color: $background;
+}
+
+@mixin top-glow {
+  background-image: radial-gradient(ellipse 75% 70% at 50% -25%, hsl(210, 100%, 16%), transparent);
+}
+
+@mixin nav-card {
+  backdrop-filter: blur(24px);
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  border: 1px solid #ffffff07;
+  transition: 500ms;
+
+  &:hover {
+    backdrop-filter: blur(30px);
+    border: 1px solid #ffffff18;
+  }
+}
+
+@mixin content-card {
+  max-width: 55rem;
+  padding: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.03rem;
+  border-radius: $border-radius;
+  background-color: #ffffff04;
+  border: 1px solid #ffffff10;
+  transition: 500ms;
+  isolation: isolate;
+
+    &:hover {
+      cursor: default;
+      backdrop-filter: blur(30px);
+      border: 1px solid #ffffff36;
+    }
+}
+
+@mixin dropdown-styling {
+  position: fixed;
+  right: $dropdown-right;
+  animation-fill-mode: forwards;
+  z-index: 25;
+  pointer-events: auto;
+}
