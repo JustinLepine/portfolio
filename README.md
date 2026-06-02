@@ -35,3 +35,5 @@ npm run dev
 ## Deployment
 
 Deployed via Vercel. Output directory is `dist` (configured in `vercel.json`).
+
+Live: https://portfolio-blush-pi-48.vercel.app/
