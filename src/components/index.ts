@@ -3,7 +3,8 @@ const data = {
   navOptions: [
     { id: 'about', label: 'About Me', path: '#about' },
     { id: 'story', label: 'Story', path: '#story' },
-    { id: 'projects', label: 'Projects', path: '/' }
+    { id: 'projects', label: 'Projects', path: '#projects' },
+    { id: 'contact', label: 'Contact', path: '#contact' }
   ],
   skills: [
     { id: 1, name: 'SQL' },
@@ -40,7 +41,7 @@ const data = {
     {
       id: 1,
       svgPath: new URL('../assets/story-svg/car.svg', import.meta.url).href,
-      content: `Outside the digital world, my passion lies in the garage. I specialize in modifying 90’s Japanese cars—specifically drifting platforms like the AE86, S-Chassis, and the FD RX-7. The FD, with its twin-turbo rotary engine, was a true mechanical puzzle. Because available documentation for these specific setups was often scarce, modifying and fixing them became a deep dive into complex problem solving. It taught me that any system, no matter how intricate, can be mastered with patience and the right diagnostic approach.`,
+      content: `Outside the digital world, my passion lies in the garage. I specialize in modifying 90’s Japanese cars, specifically drifting platforms like the AE86, S-Chassis, and the FD RX-7. The FD, with its twin-turbo rotary engine, was a true mechanical puzzle. Because available documentation for these specific setups was often scarce, modifying and fixing them became a deep dive into complex problem solving. It taught me that any system, no matter how intricate, can be mastered with patience and the right diagnostic approach.`,
     },
     {
       id: 2,
@@ -62,6 +63,26 @@ const data = {
       svgPath: new URL('../assets/story-svg/code.svg', import.meta.url).href,
       content: `What drew me to software was the same logic that fueled my interest in mechanics: the challenge of taking complex, disparate parts and making them function as a unified system. I focus on the problem-solving aspect of the development cycle, utilizing a modern stack to build reliable and streamlined applications.. I treat every project as a new puzzle to solve, focusing on building tools that are as reliable as they are efficient.`,
     }
+  ],
+  projects: [
+    {
+      id: 1,
+      name: 'Kana Bites',
+      description: 'A Chrome extension for quick Japanese flashcard practice. Covers Hiragana, Katakana, and Kanji (JLPT N5–N1) with instant feedback, session scoring, and a stats page tracking your weakest characters.',
+      tags: ['React', 'TypeScript', 'Vite', 'SCSS', 'Chrome Extension'],
+      logo: new URL('../assets/kana-bites-logo.png', import.meta.url).href,
+      github: 'https://github.com/JustinLepine/kana-bites',
+      live: null,
+    },
+    {
+      id: 2,
+      name: 'Road Trip',
+      description: 'A full-stack trip planning app for organizing road trips with friends. Create trips, manage packing lists, and drop waypoints on an interactive Google Map.',
+      tags: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Docker', 'JWT', 'Drizzle ORM'],
+      logo: new URL('../assets/road-trip-logo.png', import.meta.url).href,
+      github: 'https://github.com/JustinLepine/road-trip',
+      live: null,
+    },
   ],
   about: {
     main:  [

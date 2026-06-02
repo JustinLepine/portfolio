@@ -1,0 +1,96 @@
+@use './colors' as *;
+@use './variables' as *;
+@use './mixins' as *;
+@use './breakpoints' as *;
+
+.projects {
+  @include flex-column;
+  padding: 4rem 2rem;
+  gap: 2rem;
+
+  &_title {
+    font-size: 1.8rem;
+    color: $color;
+    letter-spacing: 0.05rem;
+  }
+
+  &_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 55rem;
+
+    @include breakpoint-large-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &_card {
+    @include content-card;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+
+    &_logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    &_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+        color: $color;
+      }
+    }
+
+    &_links {
+      display: flex;
+      gap: 0.75rem;
+
+      a {
+        color: $color-alt;
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: opacity 200ms;
+
+        &:hover { opacity: 0.7; }
+      }
+    }
+
+    &_desc {
+      color: $color-dim;
+      font-size: 0.9rem;
+      line-height: 1.6rem;
+    }
+
+    &_tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
+    }
+
+    &_tag {
+      @include content-card;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: $border-radius;
+      background-color: #ffffff08;
+      border: 1px solid #ffffff15;
+      color: $color-dim;
+    }
+  }
+}

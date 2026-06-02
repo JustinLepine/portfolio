@@ -22,7 +22,9 @@
 }
 
 @mixin top-glow {
-  background-image: radial-gradient(ellipse 75% 70% at 50% -25%, hsl(210, 100%, 16%), transparent);
+  background-image:
+    radial-gradient(ellipse 75% 40% at 50% -10%, hsl(210, 100%, 16%), transparent),
+    radial-gradient(ellipse 75% 40% at 50% 125%, hsl(210, 100%, 16%), transparent);
 }
 
 @mixin nav-card {

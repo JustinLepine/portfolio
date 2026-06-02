@@ -1,0 +1,52 @@
+@use './colors' as *;
+@use './variables' as *;
+@use './mixins' as *;
+
+.contact {
+  @include flex-column;
+  padding: 4rem 2rem;
+  gap: 2rem;
+
+  &_title {
+    font-size: 1.8rem;
+    color: $color;
+    letter-spacing: 0.05rem;
+  }
+
+  &_card {
+    @include content-card;
+    @include flex-column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 36rem;
+  }
+
+  &_text {
+    color: $color-dim;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  &_links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &_link {
+    padding: 0.6rem 2rem;
+    border: 1px solid #ffffff20;
+    border-radius: $border-radius;
+    color: $color;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    transition: border-color 200ms, color 200ms;
+
+    &:hover {
+      border-color: $color-alt;
+      color: $color-alt;
+    }
+  }
+}

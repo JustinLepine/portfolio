@@ -145,7 +145,7 @@ export default function StoryCard({ id, content, svgSrc }: Props) {
   return (
     <div className="story_card" id={id}>
       <div className="story_card_canvas" ref={mountRef} />
-      <p className="story_card_content" onClick={() => { console.log('add in pics to bring the story to life') }}>{content}</p>
+      <p className="story_card_content">{content}</p>
     </div>
   )
 }
