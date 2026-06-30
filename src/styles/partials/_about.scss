@@ -68,8 +68,12 @@
       font-size: 0.72rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      min-width: 130px;
+      min-width: 90px;
       flex-shrink: 0;
+
+      @include breakpoint-tablet {
+        min-width: 130px;
+      }
 
       @include breakpoint-large-tablet {
         font-size: 0.75rem;
@@ -79,7 +83,8 @@
     &-value {
       color: $color;
       line-height: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.78rem;
+      word-break: break-word;
 
       @include breakpoint-large-tablet {
         font-size: 0.95rem;

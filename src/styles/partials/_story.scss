@@ -12,12 +12,23 @@
   &_card {
     display: flex;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     transition: opacity 700ms ease;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
 
     &:nth-child(even) {
-      flex-direction: row-reverse;
+      flex-direction: column;
+    }
+
+    @include breakpoint-tablet {
+      padding: 1rem 2rem;
+      flex-direction: row;
+      justify-content: space-around;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
     }
 
     @include breakpoint-large-tablet {
@@ -26,10 +37,15 @@
     }
 
     &_canvas {
-      flex-shrink: 0;
-      width: 220px;
-      height: 220px;
-      cursor: default;
+      display: none;
+
+      @include breakpoint-tablet {
+        display: block;
+        flex-shrink: 0;
+        width: 220px;
+        height: 220px;
+        cursor: default;
+      }
     }
 
     &_content {
